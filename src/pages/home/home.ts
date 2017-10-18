@@ -12,13 +12,13 @@ export class HomePage {
     this.items.push({
         name: 'TV Samsung',
         inStock: '450',
-        icon: "http://www.lg.com/us/images/tvs/md05791090/thumb-350x350c.jpg"
+        icon: "assets/img/tv_samsung.jpg"
       });
     
     this.items.push({
         name: 'TV LG',
         inStock: '300',
-        icon: "http://brain-images.cdn.dixons.com/8/4/10141248/l_10141248_001.jpg"
+        icon: "assets/img/tv_lg.jpg"
       });
 
   }
