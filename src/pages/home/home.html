@@ -8,7 +8,18 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+
+  <ion-list>
+    <button ion-item ion-item *ngFor="let item of items">
+      <img height="25px" src="{{item.icon}}" item-start>
+      <div class="item-note" >
+        {{ item.name }}
+      </div>
+      <div class="item-note" item-end>
+        {{ item.inStock }}
+      </div>
+    </button>
+  </ion-list>
 
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
