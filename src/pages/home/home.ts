@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -7,7 +7,9 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
   items: Array<{name: string, inStock: string, icon: string}>;
-  constructor(public navCtrl: NavController) {
+  selected: any;
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.selected = navParams.get('item');
   	this.items = [];
     this.items.push({
         name: 'TV Samsung',
@@ -20,7 +22,16 @@ export class HomePage {
         inStock: '300',
         icon: "assets/img/tv_lg.jpg"
       });
-
   }
 
+  itemSelected(event, item) {
+    this.navCtrl.push(HomePage, {
+      item: item
+    });
+  }
+  unselectItem(event) {
+   this.navCtrl.push(HomePage, {
+      item: false
+    }); 
+  }
 }

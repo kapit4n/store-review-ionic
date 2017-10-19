@@ -6,24 +6,36 @@
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
-
 <ion-content padding>
-
-  <ion-list>
-    <button ion-item ion-item *ngFor="let item of items">
-      <img height="50px" src="{{item.icon}}" item-start>
-      <div class="item-note" >
-        {{ item.name }}
-      </div>
-      <div class="item-note" item-end>
-        {{ item.inStock }}
-      </div>
-    </button>
-  </ion-list>
-
+  <div *ngIf="!selected">
+    <ion-list>
+      <button ion-item *ngFor="let item of items" (click)="itemSelected($event, item)">
+        <img height="50px" src="{{item.icon}}" item-start>
+        <div class="item-note">
+          {{ item.name }}
+        </div>
+        <div class="item-note" item-end>
+          {{ item.inStock }}
+        </div>
+      </button>
+    </ion-list>
+  </div>
+  <div *ngIf="selected">
+    Selected Product : {{ selected.name }}
+    <ion-card>
+      <img width="100" src="{{selected.icon}}" />
+      <ion-card-content>
+        <ion-card-title>
+          {{selected.name}}
+        </ion-card-title>
+        <p>
+          {{selected.name}}
+        </p>
+      </ion-card-content>
+    </ion-card>
+  </div>
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
   </p>
-
   <button ion-button secondary menuToggle>Toggle Menu</button>
 </ion-content>
