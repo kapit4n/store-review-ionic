@@ -11,7 +11,7 @@ export class HomePage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.selected = navParams.get('item');
   	this.items = [];
-    let description = "Inventory (American English) or stock (British English) is the goods and materials that a business holds for the ultimate goals to have a purpose of resale (or repair)"
+    let description = "Inventory is the raw materials, work-in-process products and finished goods that are considered to be the portion of a business's assets that are ready or will be ready for sale. Inventory represents one of the most important assets of a business because the turnover of inventory represents one of the primary sources of revenue generation and subsequent earnings for the company's shareholders."
     this.items.push({
         name: 'TV Samsung',
         inStock: '450',
