@@ -22,6 +22,18 @@ export class HomePage {
         inStock: '300',
         icon: "assets/img/tv_lg.jpg"
       });
+    
+    this.items.push({
+        name: 'Jeep',
+        inStock: '5',
+        icon: "assets/img/jeep.jpg"
+      });
+    
+    this.items.push({
+        name: 'Imac',
+        inStock: '5',
+        icon: "assets/img/imac.jpg"
+      });
   }
 
   itemSelected(event, item) {
