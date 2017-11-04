@@ -7,7 +7,7 @@ import { StockServiceProvider } from '../../providers/stock-service/stock-servic
   templateUrl: 'home.html'
 })
 export class HomePage {
-  //items: Array<{name: string, inStock: string, icon: string, description: string}>;
+  //items: Array<{name: string, inStock: string, img: string, description: string}>;
   items:Array<any> = [];
   selected: any;
   constructor(public navCtrl: NavController, public navParams: NavParams, public dataService: StockServiceProvider) {
@@ -17,28 +17,28 @@ export class HomePage {
     this.items.push({
         name: 'TV Samsung',
         inStock: '450',
-        icon: "assets/img/tv_samsung.jpg",
+        img: "assets/img/tv_samsung.jpg",
         description: description
       });
     
     this.items.push({
         name: 'TV LG',
         inStock: '300',
-        icon: "assets/img/tv_lg.jpg",
+        img: "assets/img/tv_lg.jpg",
         description: description
       });
     
     this.items.push({
         name: 'Jeep',
         inStock: '5',
-        icon: "assets/img/jeep.jpg",
+        img: "assets/img/jeep.jpg",
         description: description
       });
     
     this.items.push({
         name: 'Imac',
         inStock: '5',
-        icon: "assets/img/imac.jpg",
+        img: "assets/img/imac.jpg",
         description: description
       });
     this.load();

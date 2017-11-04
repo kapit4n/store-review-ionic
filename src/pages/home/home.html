@@ -15,7 +15,7 @@
           {{ item.name }}
         </div>
         <div class="item-note" item-end>
-          {{ item.inStock }}
+          {{ item.stock }}
         </div>
       </button>
     </ion-list>
@@ -25,7 +25,7 @@
       <img width="100" src="{{selected.icon}}" />
       <ion-card-content>
         <ion-card-title>
-          {{selected.name}} <br> In Stock: {{selected.inStock}}
+          {{selected.name}} <br> In Stock: {{selected.stock}}
         </ion-card-title>
         <p>
           {{selected.description}}
