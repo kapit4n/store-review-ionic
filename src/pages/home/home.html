@@ -10,7 +10,7 @@
   <div *ngIf="!selected">
     <ion-list>
       <button ion-item *ngFor="let item of items" (click)="itemSelected($event, item)">
-        <img height="50px" src="{{item.icon}}" item-start>
+        <img height="50px" src="{{item.img}}" item-start>
         <div class="item-note">
           {{ item.name }}
         </div>
@@ -22,7 +22,7 @@
   </div>
   <div *ngIf="selected">
     <ion-card>
-      <img width="100" src="{{selected.icon}}" />
+      <img width="100" src="{{selected.img}}" />
       <ion-card-content>
         <ion-card-title>
           {{selected.name}} <br> In Stock: {{selected.stock}}
