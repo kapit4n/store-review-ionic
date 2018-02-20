@@ -1,9 +1,11 @@
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
 ## Mockups
-![Check](https://github.com/kapit4n/store-review-ionic/raw/master/mockups/ionic_stock_check_item.png
-)
+### List
 ![List](https://github.com/kapit4n/store-review-ionic/raw/master/mockups/ionix_stock_check_home.png
+)
+### Item
+![Check](https://github.com/kapit4n/store-review-ionic/raw/master/mockups/ionic_stock_check_item.png
 )
 
 
