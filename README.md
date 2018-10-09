@@ -1,14 +1,7 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
-
-## Mockups
-### List
-![List](https://github.com/kapit4n/store-review-ionic/raw/master/mockups/ionix_stock_check_home.png
-)
-### Item
-![Check](https://github.com/kapit4n/store-review-ionic/raw/master/mockups/ionic_stock_check_item.png
-)
-
-
+Review the store
+<div style="padding: 100px;">
+<img src="https://github.com/kapit4n/store-review-ionic/raw/master/mockups/ionix_stock_check_home.png" width="50%"/>
+</div>
 ## How to use this template
 
 *This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
